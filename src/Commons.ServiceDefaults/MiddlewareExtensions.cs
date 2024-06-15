@@ -44,6 +44,7 @@ namespace Commons.ServiceDefaults
             builder.AddDefaulCulture();
             builder.AddDefaultHealthChecks();
             builder.AddDefaultSerilog();
+            builder.AddDefaultCors();
             return builder;
         }
 
@@ -51,7 +52,6 @@ namespace Commons.ServiceDefaults
         {
             builder.AddDefaultAuditLogStore();
             builder.AddDefaultDataProtection();
-            builder.AddDefaultCors();
             return builder;
         }
 
