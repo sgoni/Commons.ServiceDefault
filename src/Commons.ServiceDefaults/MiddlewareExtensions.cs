@@ -45,6 +45,7 @@ namespace Commons.ServiceDefaults
             builder.AddDefaultHealthChecks();
             builder.AddDefaultSerilog();
             builder.AddDefaultCors();
+            builder.Services.AddHttpContextAccessor();
             return builder;
         }
 
